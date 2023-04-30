@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ScanDocActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_scan"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/single_doc_camera_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_single_doc"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/logo" />
+
+            <ImageView
+                android:id="@+id/singleDocCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/ic_camera_id"
+                app:layout_constraintBottom_toBottomOf="@+id/single_doc_camera_bg"
+                app:layout_constraintRight_toRightOf="@+id/single_doc_camera_bg"
+                app:layout_constraintTop_toTopOf="@+id/single_doc_camera_bg" />
+
+            <ImageView
+                android:id="@+id/multi_doc_camera_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_multiple_doc"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/single_doc_camera_bg" />
+
+            <ImageView
+                android:id="@+id/multiDocCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/ic_camera_id"
+                app:layout_constraintBottom_toBottomOf="@+id/multi_doc_camera_bg"
+                app:layout_constraintRight_toRightOf="@+id/multi_doc_camera_bg"
+                app:layout_constraintTop_toTopOf="@+id/multi_doc_camera_bg" />
+
+            <ImageView
+                android:id="@+id/single_doc_gallery_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_single_doc"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/multi_doc_camera_bg" />
+
+            <ImageView
+                android:id="@+id/singleDocGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/ic_image_button"
+                app:layout_constraintBottom_toBottomOf="@+id/single_doc_gallery_bg"
+                app:layout_constraintRight_toRightOf="@+id/single_doc_gallery_bg"
+                app:layout_constraintTop_toTopOf="@+id/single_doc_gallery_bg" />
+
+            <ImageView
+                android:id="@+id/multi_doc_gallery_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_multiple_doc"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/single_doc_gallery_bg" />
+
+            <ImageView
+                android:id="@+id/multiDocGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/ic_image_button"
+                app:layout_constraintBottom_toBottomOf="@+id/multi_doc_gallery_bg"
+                app:layout_constraintRight_toRightOf="@+id/multi_doc_gallery_bg"
+                app:layout_constraintTop_toTopOf="@+id/multi_doc_gallery_bg" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,3 @@
+include ':app'
+include ':scanlibrary'
+rootProject.name = "Camera Scanner - Doc Scanner, PDF Maker"

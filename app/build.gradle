@@ -1,0 +1,72 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.example.camerascanner_docscannerpdfmaker"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    useLibrary 'org.apache.http.legacy'
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.github.AppIntro:AppIntro:6.1.0'
+// google mobile vision
+    implementation 'com.google.android.gms:play-services-vision:11.0.2'
+
+    implementation project(path: ':scanlibrary')
+    implementation 'jp.co.cyberagent.android:gpuimage:2.1.0'
+    implementation 'com.itextpdf:itextg:5.5.10'
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
+    implementation 'com.google.android.gms:play-services-vision:10.2.6'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+    implementation 'com.github.mukeshsolanki:DrawingView-Android:1.0.13'
+    implementation (group: 'com.aspose', name: 'aspose-words', version: '20.6', classifier: 'android.via.java')
+//    implementation 'javax.xml.stream:stax-api:1.0'
+    // https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
+    implementation group: 'org.apache.poi', name: 'poi', version: '4.1.2'
+    implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '4.1.2'
+// https://mvnrepository.com/artifact/com.itextpdf/kernel
+    implementation group: 'com.itextpdf', name: 'kernel', version: '7.1.12'
+    implementation group: 'com.itextpdf', name: 'layout', version: '7.1.12'
+
+}
