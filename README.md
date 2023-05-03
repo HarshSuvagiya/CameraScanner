@@ -2,6 +2,9 @@
 
 Camera Scanner App - PDF Scanner, Scan is an All-In-One Document Scanner App
 
+## Screenshots
+<img src="DocumentScanner.png">
+
 ## Some feature listed over here:
 <ul>
 <li> Make ID card </li>
