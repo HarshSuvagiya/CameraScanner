@@ -2,7 +2,7 @@
 
 Camera Scanner App - PDF Scanner, Scan is an All-In-One Document Scanner App
 
-## Screenshots
+## Screenshot
 <img src="DocumentScanner.png">
 
 ## Some feature listed over here:
